@@ -1,0 +1,4 @@
+{
+  "extends": "@enline-ui/ts-config/react.json",
+  "inlcude": ["src"]
+}
