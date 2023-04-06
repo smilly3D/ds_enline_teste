@@ -20,8 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
-        TURBO_TOKEN: uyYbFfNsdY3lB8tlH3Es1dru
-        TURBO_TEAM: smilly3d
+        env:
+          TURBO_TOKEN: uyYbFfNsdY3lB8tlH3Es1dru
+          TURBO_TEAM: smilly3d
 
       - name: Deploy storybook
         working-directory: ./packages/docs
