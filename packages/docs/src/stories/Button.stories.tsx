@@ -7,6 +7,45 @@ export default {
   component: Button,
   args: {
     children: 'Send',
+    variant: 'primary',
+    size: 'md',
+    disabled: false,
+  },
+  argTypes: {
+    children: {
+      control: { type: null },
+    },
+    variant: {
+      options: [
+        'primary',
+        'secondary',
+        'tertiary',
+        'primaryLeftBar',
+        'secondaryLeftBar',
+        'rounded',
+      ],
+      description: 'Todas as variantes do Botão na aplicação',
+      control: {
+        type: 'inline-radio',
+      },
+      table: {
+        category: 'Variants',
+      },
+    },
+    size: {
+      options: ['xs', 'sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    onClick: {
+      action: 'click',
+    },
   },
 } as Meta<ButtonProps>
 

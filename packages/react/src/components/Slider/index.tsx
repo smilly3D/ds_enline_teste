@@ -31,7 +31,7 @@ export function Slider(props: SliderProps) {
       {...props}
       onMouseEnter={() => setHandleTooltip((props) => !props)}
       onMouseLeave={() => setHandleTooltip((props) => !props)}
-      onValueChange={(value) =>
+      onValueChange={(value: any) =>
         setTooltipValue(converterDataHora(isData[value]))
       }
     >

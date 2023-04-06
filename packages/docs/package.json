@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "@storybook/addon-links": "^6.5.16",
     "@storybook/builder-vite": "^0.4.2",
     "@storybook/react": "^6.5.16",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.13",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
@@ -27,9 +29,9 @@
   },
   "dependencies": {
     "@enline-ui/eslint-config": "*",
-    "@enline-ui/ts-config": "*",
     "@enline-ui/react": "*",
     "@enline-ui/tokens": "*",
+    "@enline-ui/ts-config": "*",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

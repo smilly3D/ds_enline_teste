@@ -10,6 +10,7 @@ export const Button = styled('button', {
   textAlign: 'center',
   minWidth: 120,
   boxSizing: 'border-box',
+  padding: '0 $4',
 
   display: 'flex',
   alignItems: 'center',
@@ -25,6 +26,9 @@ export const Button = styled('button', {
 
   '&:disabled': {
     cursor: 'not-allowed',
+  },
+  '&:focus': {
+    boxShadow: '0 0 0 2px $color$purple500',
   },
 
   variants: {
@@ -146,3 +150,5 @@ export const Button = styled('button', {
 export interface ButtonProps extends ComponentProps<typeof Button> {
   as?: ElementType
 }
+
+Button.displayName = 'Button'

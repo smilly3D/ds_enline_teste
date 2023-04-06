@@ -10,3 +10,4 @@ export function Switch(props: SwitchProps) {
     </SwitchContainer>
   )
 }
+Switch.displayName = 'Switch'

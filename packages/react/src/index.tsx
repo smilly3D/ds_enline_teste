@@ -8,3 +8,5 @@ export * from './components/TextArea'
 export * from './components/Checkbox'
 export * from './components/Switch'
 export * from './components/Slider'
+
+export * from './styles'

@@ -7,7 +7,7 @@ export const TextInputContainer = styled('div', {
   boxSizing: 'border-box',
   border: '2px solid $gray700',
   display: 'flex',
-  alignItems: 'baseline',
+  alignItems: 'center',
 
   '&:focus-within': {
     borderColor: '$purple500',
@@ -29,7 +29,7 @@ export const Input = styled('input', {
 
   width: '100%',
 
-  '&:placeholder': {
+  '&::placeholder': {
     color: '$gray700',
   },
   '&:focus': {

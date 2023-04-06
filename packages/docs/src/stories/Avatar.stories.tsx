@@ -7,6 +7,18 @@ export default {
   args: {
     src: 'https://files-enline-dev.s3.amazonaws.com/company-logo/MMG.png',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+    containerProps: {
+      control: {
+        type: null,
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
