@@ -33,4 +33,6 @@ export const colors = {
 
   gradient2a: '#A13FA9',
   gradient2b: '#C63F92',
+
+  teste: '#fff',
 }
